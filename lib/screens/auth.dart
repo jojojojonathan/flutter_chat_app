@@ -206,7 +206,8 @@ class _AuthScreenState extends State<AuthScreen> {
                             ),
                             if (!_isLogin)
                               DropdownButtonFormField<String>(
-                                value: _enteredLanguage,
+                                // value: _enteredLanguage,
+                                hint: const Text('Choose your language'),
                                 items: languages
                                     .map((lang) => DropdownMenuItem(
                                           value: lang,
